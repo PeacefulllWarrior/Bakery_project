@@ -1,0 +1,93 @@
+.footer {
+    padding: 32px 0;
+    position: relative;
+    
+    background: url('../images/footer-section-background.jpg');
+    background-color: var(--color-primary-black); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.footer-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width:$bp-desktop) {
+        flex-wrap: nowrap;
+    }
+    @media screen and (min-width:$bp-tablet) {
+        flex-wrap: nowrap;
+    }
+}
+
+.footer::after,
+.footer::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    background-repeat: no-repeat;
+}
+
+.footer::after {
+    width: 180px;
+    height: 120px;
+    background-image: url(../images/bread-small.png);
+}
+
+.footer::before {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url(../images/bread-big.png);
+}
+
+.footer-nav,
+.footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo,
+.footer-menu {
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.address-list,
+.address-info {
+    flex-grow: 1;
+}
+.adress-link {
+    text-decoration: none;
+    color: var(--color-primary-normal);
+    font-size: 16px;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.adress-link:hover {
+    text-decoration: none;
+    color: var(--color-brand-light);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.address-icon {
+    fill: var(--color-primary-normal);
+    /*заливка*/
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-light);
+    /*заливка*/
+}
+
+.adress-copyright {
+    color: var(--);
+    font-size: 14px;
+
+}
